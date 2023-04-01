@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family:'Raleway', sans-serif;
+    background-image: linear-gradient(to right, #172026, #027373);
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.cabecalho-imagem{
+    height: 75px;
+    cursor: pointer;
+}
+.cabecalho-men{
+    display: flex;
+}
+.cabecalho-menu-item{
+    color: #5FCDD9;
+    margin: 0px 30px 0px 0px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.cabecalho-menu-item:hover{
+    color: #172026;
+    text-shadow: 0px 0px 8px #5fcdd952;
+}
+.conteudo-principal-imagem{
+    height: 430px;
+}
+.conteudo{
+    border-top: 0.4px solid #5FCDD9;
+    
+}
+.conteudo-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.conteudo-principal-escrito{
+    color: #5FCDD9;
+}
+.conteudo-principal-escrito-titulo{
+    margin-bottom:  30px;
+    color: #04BFAD;
+}
+.conteudo-principal-escrito-subtitulo{
+    margin-bottom: 15px;
+}
+.conteudo-principal-escrito-botao{
+    border: none;
+    background: #5FCDD9;
+    border-radius: 15px;
+    color: #172026;
+    height: 50px;
+    width: 180px;
+    font-size: larger;
+    font-weight: 600;
+    transition: color 1s;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px #04bfac2d;
+}
+.conteudo-principal-escrito-botao:hover{
+    color: #fff;
+    background: #172026;
+}
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo-secundario-titulo{
+    border-top: 0.5px solid #5FCDD9;
+    padding-top: 35px;
+    color: #04BFAD;
+    margin: 10px 0px;
+}
+.conteudo-secundario-paragrafo{
+    margin: 15px 0px;
+    color: #5FCDD9;
+}
+.rodape{    
+    padding: 10px;
+    border-top: 0.4px solid #5FCDD9;
+    margin-top: 35px;
+}
+.rodape-imagem{
+    height: 75px;
+    display: block;
+    margin: 0px auto;/*serve para quando tiver só um item e querer centralizar ele.*/
+    cursor: pointer;
+}
+
+
+@media (max-width:1100px){
+    .conteudo-principal{
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-principal-escrito-titulo{
+        margin-top: 20px;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        text-align: center;
+    }
+
+    .conteudo-principal-imagem{
+        height: 400px;
+    }
+}
+
+/*O comando @media tem o objetivo maior em ajuda na responsividade do site.
+Geralmente é trabalhado com largura(widht)*/
+/*Quando o site chegar no max-width de 760px ele vai aplicar oq eu mandar.*/
+@media (max-width:760px){
+    .cabecalho{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .conteudo-principal{
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        text-align: center;
+    }
+
+    .conteudo-principal-imagem{
+        height: 200px;
+    }
+    .conteudo-secundario{
+        text-align: center;
+    }
+}
+
+
+/*Quando o site chegar no max-width de 460px ele vai aplicar oq eu mandar.*/
+@media (max-width:460px){
+    .cabecalho{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cabecalho-imagem{
+        margin: 0px 0px 0px 0px;
+    }
+    .cabecalho-menu-item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .conteudo-principal{
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        text-align: center;
+    }
+
+    .conteudo-principal-imagem{
+        height: 200px;
+    }
+    .conteudo-secundario{
+        text-align: center;
+    }
+}
+/*Quando o site chegar no max-width de 320px ele vai aplicar oq eu mandar.*/
+@media (max-width:320px){
+    .cabecalho{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cabecalho-imagem{
+        margin: 0px 0px 0px 0px;
+    }
+    .cabecalho-menu-item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .conteudo-principal{
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        text-align: center;
+    }
+
+    .conteudo-principal-imagem{
+        height: 200px;
+    }
+    .conteudo-secundario{
+        text-align: center;
+    }
+}
